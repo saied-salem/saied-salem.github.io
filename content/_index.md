@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: ''
+title: ""
 date: 2022-10-24
 type: landing
 
@@ -12,7 +12,7 @@ sections:
       image:
         filename: hero-academic.png
       cta:
-        label: '**Get Started**'
+        label: "**Get Started**"
         url: https://hugoblox.com/templates/
       cta_alt:
         label: Ask a question
@@ -33,8 +33,8 @@ sections:
         <script async defer src="https://buttons.github.io/buttons.js"></script>
     design:
       background:
-        gradient_end: '#1976d2'
-        gradient_start: '#004ba0'
+        gradient_end: "#1976d2"
+        gradient_start: "#004ba0"
         text_color_light: true
   - block: about.biography
     id: about
@@ -42,15 +42,29 @@ sections:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-  - block: skills
+  # - block: skills
+  #   content:
+  #     title: Skills
+  #     text: ''
+  #     # Choose a user to display skills from (a folder name within `content/authors/`)
+  #     username: admin
+  #   design:
+  #     columns: '1'
+  - block: collection
+    id: featured
     content:
-      title: Skills
-      text: ''
-      # Choose a user to display skills from (a folder name within `content/authors/`)
-      username: admin
+      title: Featured Publications
+      filters:
+        folders:
+          - publication
+        featured_only: true
     design:
-      columns: '1'
+      columns: "1"
+      view: card
+
+
   - block: experience
+    id: experience
     content:
       title: Experience
       # Date format for experience
@@ -62,33 +76,39 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
-          date_end: ''
+        - title: Research and Development Engineer
+          company: Astute Imaging
+          company_url: "https://astuteimaging.com/"
+          company_logo: astute_imaging_logo
+          location: Kirkland, Washington, United States
+          date_start: "2022-08-01"
+          date_end: "2023-07-17"
           description: |2-
-              Responsibilities include:
 
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+              * Contributing to developing an End to end PACS-integrated system with automatic segmentation and classification workflow of breast cancer ultrasound images using state-of-the-art deep learning techniques, enhancing the efficiency of the diagnosis
+              * Developed a DICOM medical viewer with various measurements and image processing tools for images and videos acquisitions, aiding physicians in their assessments
+              * Implemented a configurable breast ultrasound segmentation package for training deeplearning models, achieving the highest dice score in the literature with new hyperparameter optimizations
+              * Utilized Azure Virtual Machines (VM) to host and run the containerized system.
+
+        - title: Data scientist intern
+          company: Treyd
+          company_url: "https://www.treyd.io/"
+          company_logo: treyd_logo
+          location: Stockholm County, Sweden
+          date_start: "2022-07-21"
+          date_end: "2022-09-30"
+          description: |2-
+              * Working on developing human input inspection system,
+              creating data acquisition pipline and comparing it with deeplearning field detecting system api
+              * building machine learning model for companies credit limit estimation
+
     design:
-      columns: '2'
+      columns: "2"
   - block: accomplishments
+    id: accomplishments
     content:
       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Accomplish&shy;ments'
+      title: "Accomplish&shy;ments"
       subtitle:
       # Date format: https://docs.hugoblox.com/customization/#date-format
       date_format: Jan 2006
@@ -98,62 +118,87 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: https://www.coursera.org
-          date_end: ''
-          date_start: '2021-01-25'
-          description: ''
-          icon: coursera
+        - certificate_url: https://www.coursera.org/account/accomplishments/certificate/WS376GP7M4BX
+          date_end: ""
+          date_start: "2023-09-01"
+          description: ""
+          icon: Coursera
           organization: Coursera
           organization_url: https://www.coursera.org
-          title: Neural Networks and Deep Learning
-          url: ''
-        - certificate_url: https://www.edx.org
-          date_end: ''
-          date_start: '2021-01-01'
-          description: Formulated informed blockchain models, hypotheses, and use cases.
-          icon: edx
-          organization: edX
-          organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
-          description: ''
-          icon: datacamp
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
-          url: ''
+          title: Natural Language Processing specialization
+          description: -[First Course](https://www.coursera.org/account/accomplishments/certificate/YXMDE5PQ9ZGX) ,  [Second Course](https://www.coursera.org/account/accomplishments/certificate/C6ZVC8CV329J) ,  [Third Course](https://www.coursera.org/account/accomplishments/certificate/WS376GP7M4BX)
+
+          url: https://www.coursera.org/account/accomplishments/certificate/WS376GP7M4BX
+
+        - certificate_url: https://www.coursera.org/account/accomplishments/specialization/certificate/TMEQBDKALAPA
+          date_end: ""
+          date_start: "2021-09-01"
+          description:
+          company_logo: deeplearning.ai.png
+          organization: Coursera
+          organization_url: https://www.coursera.org
+          title: Deep Learning Specialization
+          url: https://www.coursera.org/account/accomplishments/specialization/certificate/TMEQBDKALAPA
+
+        - certificate_url: https://www.coursera.org/account/accomplishments/certificate/8QKYXE8MFUPD
+          date_end: ""
+          date_start: "2021-08-25"
+          description: ""
+          icon: Coursera
+          organization: Coursera
+          organization_url: https://www.coursera.org
+          title: Machine Learning
+          url: "https://www.coursera.org/account/accomplishments/certificate/8QKYXE8MFUPD"
+
+        - certificate_url: https://www.coursera.org/account/accomplishments/certificate/YR4H7YY87NUS
+          date_end: ""
+          date_start: "2022-04-01"
+          description: ""
+          icon: Coursera
+          organization: Coursera
+          organization_url: https://www.coursera.org
+          title: AI in medical diagnosis
+          url: "https://www.coursera.org/account/accomplishments/certificate/YR4H7YY87NUS"
+
+        - certificate_url: https://www.coursera.org/account/accomplishments/specialization/certificate/FYA9DMMLQAEV
+          date_end: ""
+          date_start: "2020-07-01"
+          description: ""
+          icon: Coursera
+          organization: Coursera
+          organization_url: https://www.coursera.org
+          title: Object Oriented Programming in Java Duke California San Diego specialization
+          url: "https://www.coursera.org/account/accomplishments/specialization/certificate/FYA9DMMLQAEV"
+
     design:
-      columns: '2'
-  - block: collection
-    id: posts
-    content:
-      title: Recent Posts
-      subtitle: ''
-      text: ''
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
-      filters:
-        folders:
-          - post
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: compact
-      columns: '2'
+      columns: "2"
+  # - block: collection
+  #   id: posts
+  #   content:
+  #     title: Recent Posts
+  #     subtitle: ""
+  #     text: ""
+  #     # Choose how many pages you would like to display (0 = all pages)
+  #     count: 5
+  #     # Filter on criteria
+  #     filters:
+  #       folders:
+  #         - post
+  #       author: ""
+  #       category: ""
+  #       tag: ""
+  #       exclude_featured: false
+  #       exclude_future: false
+  #       exclude_past: false
+  #       publication_type: ""
+  #     # Choose how many pages you would like to offset by
+  #     offset: 0
+  #     # Page order: descending (desc) or ascending (asc) date.
+  #     order: desc
+  #   design:
+  #     # Choose a layout view
+  #     view: compact
+  #     columns: "2"
   - block: portfolio
     id: projects
     content:
@@ -170,65 +215,61 @@ sections:
       # To remove the toolbar, delete the entire `filter_button` block.
       buttons:
         - name: All
-          tag: '*'
+          tag: "*"
         - name: Deep Learning
           tag: Deep Learning
-        - name: Other
-          tag: Demo
+        - name: Digital Signal Processing
+          tag: Digital Signal Processing
+        - name: Embedded Systems
+          tag: Embedded Systems
+        - name: Computer graphics
+          tag: Computer graphics
+          
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '1'
+      columns: "1"
       view: showcase
       # For Showcase view, flip alternate rows?
-      flip_alt_rows: false
-  - block: markdown
-    content:
-      title: Gallery
-      subtitle: ''
-      text: |-
-        {{< gallery album="demo" >}}
-    design:
-      columns: '1'
-  - block: collection
-    id: featured
-    content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publication
-        featured_only: true
-    design:
-      columns: '2'
-      view: card
-  - block: collection
-    content:
-      title: Recent Publications
-      text: |-
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
-      filters:
-        folders:
-          - publication
-        exclude_featured: true
-    design:
-      columns: '2'
-      view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - event
-    design:
-      columns: '2'
-      view: compact
-  - block: tag_cloud
-    content:
-      title: Popular Topics
-    design:
-      columns: '2'
+      flip_alt_rows: true
+  # - block: markdown
+  #   content:
+  #     title: Gallery
+  #     subtitle: ""
+  #     text: |-
+  #       {{< gallery album="demo" >}}
+  #   design:
+  #     columns: "1"
+
+
+  # - block: collection
+  #   content:
+  #     title: Recent Publications
+  #     text: |-
+  #       {{% callout note %}}
+  #       Quickly discover relevant content by [filtering publications](./publication/).
+  #       {{% /callout %}}
+  #     filters:
+  #       folders:
+  #         - publication
+  #       exclude_featured: true
+  #   design:
+  #     columns: "2"
+  #     view: citation
+  # - block: collection
+  #   id: talks
+  #   content:
+  #     title: Recent & Upcoming Talks
+  #     filters:
+  #       folders:
+  #         - event
+  #   design:
+  #     columns: "2"
+  #     view: compact
+  # - block: tag_cloud
+  #   content:
+  #     title: Popular Topics
+  #   design:
+  #     columns: "2"
   - block: contact
     id: contact
     content:
@@ -237,37 +278,9 @@ sections:
       text: |-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: test@example.org
-      phone: 888 888 88 88
-      appointment_url: 'https://calendly.com'
-      address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
-      # Choose a map provider in `params.yaml` to show a map from these coordinates
-      coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'  
-      contact_links:
-        - icon: twitter
-          icon_pack: fab
-          name: DM Me
-          link: 'https://twitter.com/Twitter'
-        - icon: skype
-          icon_pack: fab
-          name: Skype Me
-          link: 'skype:echo123?call'
-        - icon: video
-          icon_pack: fas
-          name: Zoom Me
-          link: 'https://zoom.com'
+      email: sa.salem.saied@gmail.com
+      phone: +201149444110
+      
       # Automatically link email and phone or display as text?
       autolink: true
       # Email form provider
@@ -279,5 +292,5 @@ sections:
           # Enable CAPTCHA challenge to reduce spam?
           captcha: false
     design:
-      columns: '2'
+      columns: "2"
 ---
