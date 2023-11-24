@@ -6,7 +6,7 @@ zeros and poles, capturing the phase and magnitude response then filters
 real-time input signals and dynamically plots the results in real-time"
 tags:
   - Digital signal processing
-date: "2022-07-27T00:00:00Z"
+date: "2022-07-29T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://github.com/saied-salem/digital-filter-designer"
