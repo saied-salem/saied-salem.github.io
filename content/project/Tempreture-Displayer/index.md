@@ -1,7 +1,7 @@
 ---
-title: RTOS-vehicle-direction-and-hazard-controller
+title: Tempreture-Displayer
 
-summary: " Implementing Temprature displayer using ADC drive with LM35 tempreture sensor and LCD"
+summary: " Implementing Temprature displayer using ADC drive with LM35 tempreture sensor and LCD using STm32 microcontroller (ARM)"
 tags:
   - Embedded Systems
 date: "2022-07-28T00:00:00Z"
