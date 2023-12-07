@@ -134,7 +134,7 @@ sections:
           date_end: ""
           date_start: "2021-09-01"
           description:
-          company_logo: deeplearning.ai
+          #company_logo: deeplearning.ai
 		  icon: deeplearning.ai
           organization: Coursera
           organization_url: https://www.coursera.org
