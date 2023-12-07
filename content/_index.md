@@ -130,15 +130,7 @@ sections:
 
           url: https://www.coursera.org/account/accomplishments/certificate/WS376GP7M4BX
 
-        - certificate_url: https://www.coursera.org/account/accomplishments/specialization/certificate/TMEQBDKALAPA
-          date_end: ""
-          date_start: "2021-09-01"
-          description: ""
-		  icon: deeplearning
-          organization: Coursera
-          organization_url: https://www.coursera.org
-          title: Deep Learning Specialization
-          url: https://www.coursera.org/account/accomplishments/specialization/certificate/TMEQBDKALAPA
+
 
         - certificate_url: https://www.coursera.org/account/accomplishments/certificate/8QKYXE8MFUPD
           date_end: ""
