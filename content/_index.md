@@ -122,7 +122,7 @@ sections:
           date_end: ""
           date_start: "2023-09-01"
           description: ""
-          icon: Coursera
+          icon: deeplearning.ai
           organization: Coursera
           organization_url: https://www.coursera.org
           title: Natural Language Processing specialization
@@ -134,7 +134,8 @@ sections:
           date_end: ""
           date_start: "2021-09-01"
           description:
-          company_logo: deeplearning.ai.png
+          company_logo: deeplearning.ai
+		  icon: deeplearning.ai
           organization: Coursera
           organization_url: https://www.coursera.org
           title: Deep Learning Specialization
@@ -144,7 +145,7 @@ sections:
           date_end: ""
           date_start: "2021-08-25"
           description: ""
-          icon: Coursera
+          icon: stanford
           organization: Coursera
           organization_url: https://www.coursera.org
           title: Machine Learning
@@ -154,7 +155,7 @@ sections:
           date_end: ""
           date_start: "2022-04-01"
           description: ""
-          icon: Coursera
+          icon: deeplearning.ai
           organization: Coursera
           organization_url: https://www.coursera.org
           title: AI in medical diagnosis
@@ -164,7 +165,7 @@ sections:
           date_end: ""
           date_start: "2020-07-01"
           description: ""
-          icon: Coursera
+          icon: sandiego
           organization: Coursera
           organization_url: https://www.coursera.org
           title: Object Oriented Programming in Java Duke California San Diego specialization
