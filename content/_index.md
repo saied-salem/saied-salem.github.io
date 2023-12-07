@@ -122,7 +122,7 @@ sections:
           date_end: ""
           date_start: "2023-09-01"
           description: ""
-          icon: deeplearning.ai
+          icon: deeplearning
           organization: Coursera
           organization_url: https://www.coursera.org
           title: Natural Language Processing specialization
@@ -135,7 +135,7 @@ sections:
           date_start: "2021-09-01"
           description:
           #company_logo: deeplearning.ai
-		  icon: deeplearning.ai
+		  icon: deeplearning
           organization: Coursera
           organization_url: https://www.coursera.org
           title: Deep Learning Specialization
@@ -155,7 +155,7 @@ sections:
           date_end: ""
           date_start: "2022-04-01"
           description: ""
-          icon: deeplearning.ai
+          icon: deeplearning
           organization: Coursera
           organization_url: https://www.coursera.org
           title: AI in medical diagnosis
