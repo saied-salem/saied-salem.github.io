@@ -133,8 +133,7 @@ sections:
         - certificate_url: https://www.coursera.org/account/accomplishments/specialization/certificate/TMEQBDKALAPA
           date_end: ""
           date_start: "2021-09-01"
-          description:""
-
+          description: ""
 		  icon: deeplearning
           organization: Coursera
           organization_url: https://www.coursera.org
